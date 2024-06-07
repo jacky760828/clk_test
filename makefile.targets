@@ -1,0 +1,12 @@
+
+
+LoadImage.bin: 
+	nds32le-elf-objcopy -S -O binary -j .text -j .data -j .rodata -j .jcr -j .sdata_d -j .sdata_w -j .sdata_h -j .sdata_b -j .sdata_f -j .sbss_f -j .sbss_b -j .sbss_h -j .sbss_w -j .sbss_d -j .bss -j .Eric_init -j DATA_EARE0 -j DATA_EARE1 $(LINKER_OUTPUTS) $@
+	mv -f "$@" ../
+	cp -f "$(LINKER_OUTPUTS)" ../
+
+#disassembly output
+$(SECONDARY_OUTPUT_PATH)/disasm.s:	$(LINKER_OUTPUTS)
+	$(CROSS_COMPILE)objdump -x -d -C -Mace=/cygdrive/C/Andestech/AndeSight_RDS_v320/target/HY16F3910/lib/libacetool.so $< > $@
+	
+

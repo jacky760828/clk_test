@@ -1,0 +1,2 @@
+   text (code + rodata)	   data	    bss	    dec	    hex	filename
+   2110 (2110 +      0)	      8	      4	   2122	    84a	clk_test.adx

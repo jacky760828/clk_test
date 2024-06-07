@@ -1,0 +1,4 @@
+
+READELF_OUTPUTS += LoadImage.bin
+READELF_OUTPUTS += $(SECONDARY_OUTPUT_PATH)/disasm.s 
+
