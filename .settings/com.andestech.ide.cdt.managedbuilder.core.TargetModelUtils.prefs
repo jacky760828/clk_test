@@ -1,0 +1,10 @@
+autoBuildEnable=false
+connectType=ICE
+connectTypeOptionData=2
+eclipse.preferences.version=1
+iceman.misc.args=
+name=HY16F3910
+sid.misc.args=
+target.project.build.selection=true
+target.project.clean.selection=false
+targetURI=rse\://LOCALHOST/~target/HY16F3910
